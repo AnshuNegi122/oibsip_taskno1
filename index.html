@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div id="logo">
+            <img src="images/logo.jpg" alt="logo">
+        </div>
+        <div class="navbar">
+            <div id="home">
+                <a href="#">Home</a>
+            </div>
+            <div id="search">
+                <a href="#"><img src="images/search.png" alt="search"></a>
+            </div>
+            <div id="offers">
+                <a href="#">Offers</a>
+            </div>
+            <div id="login">
+                <a href="#">LOGIN</a>
+            </div>
+            <div id="cart">
+                <a href="#"><img src="images/cart.png" alt="cart"></a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="search">
+        <h3><i>LOGO</i></h3>
+        <P>Discover the best home made<br>food in Your Area</P>
+        <input type="text" placeholder="Search Here">
+    </div>
+
+    <h4>What's on your mind?</h4>
+    <div class="slider-container">
+        <button class="prev" onclick="slideLeft()">&#10094;</button>
+        <div class="slider-wrapper">
+            <div class="slider">
+                <div class="slide">
+                    <img
+                        src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Paratha.png">
+                </div>
+                <div class="slide">
+                    <img
+                        src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/8f508de7-e0ac-4ba8-b54d-def9db98959e_chole%20bhature.png">
+                </div>
+                <div class="slide">
+                    <img
+                        src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/8f508de7-e0ac-4ba8-b54d-def9db98959e_Pav%20Bhaji.png">
+                </div>
+                <div class="slide">
+                    <img
+                        src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Noodles.png">
+                </div>
+                <div class="slide">
+                    <img
+                        src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Kebabs.png">
+                </div>
+
+                <div class="slide">
+                    <img
+                        src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Dosa.png">
+                </div>
+                <div class="slide">
+                    <img
+                        src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_North%20Indian.png">
+                </div>
+                <div class="slide">
+                    <img
+                        src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/8f508de7-e0ac-4ba8-b54d-def9db98959e_Rolls.png">
+                </div>
+                <div class="slide">
+                    <img
+                        src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/8f508de7-e0ac-4ba8-b54d-def9db98959e_burger.png">
+                </div>
+                <div class="slide">
+                    <img
+                        src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Chinese.png">
+                </div>
+                <div class="slide">
+                    <img
+                        src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/5/01d3647e-6484-4a04-ada4-3060b3d00781_Veg.png">
+                </div>
+            </div>
+        </div>
+        <button class="next" onclick="slideRight()">&#10095;</button>
+    </div>
+
+    <div class="container">
+        <div class="filters">
+            <button>Filter</button>
+            <button>Sort By</button>
+            <button>Fast Delivery</button>
+            <button>New</button>
+            <button>Ratings 4.0+</button>
+            <button>Pure Veg</button>
+            <button>Offers</button>
+            <button>Rs. 300-Rs. 600</button>
+            <button>Less than Rs. 300</button>
+        </div>
+        <div class="restaurant-list">
+            <div class="restaurant">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/6/4/18ab1a2a-c2a7-4cf0-a410-dacdf189bbd8_69061.JPG"
+                    alt="">
+                <div class="restaurant-details">
+                    <h3>Subway</h3>
+                    <p>4.2 • 20-25 mins</p>
+                </div>
+                <div class="offer">₹299</div>
+            </div>
+            <div class="restaurant">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/e5f54df4ed8bac458b801ede76ee37d0"
+                    alt="">
+                <div class="restaurant-details">
+                    <h3>La Pino'z Pizza</h3>
+                    <p>4.0 • 30-35 mins</p>
+                </div>
+                <div class="offer">₹289</div>
+            </div>
+            <div class="restaurant">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/j6w0gbsy2pdoivjjlymp" alt="">
+                <div class="restaurant-details">
+                    <h3>Uss Da Dhaba</h3>
+                    <p>4.0 • 35-40 mins</p>
+                </div>
+                <div class="offer">₹149</div>
+            </div>
+            <div class="restaurant">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/0a59d45ca92d85e5f63f5bc79f3dbb33" alt="">
+                <div class="restaurant-details">
+                    <h3>Punjabi Angithi</h3>
+                    <p>4.4 • 25-30 mins</p>
+                </div>
+                <div class="offer">₹259</div>
+            </div>
+        </div>
+
+        <div class="restaurant-list">
+            <div class="restaurant">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/0ff7f5ee8d60de2e4e065f322519addf" alt="">
+                <div class="restaurant-details">
+                    <h3>Dosa Plaza</h3>
+                    <p>4.7 • 30-35 mins</p>
+                </div>
+                <div class="offer">₹149</div>
+            </div>
+            <div class="restaurant">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/4/17/34bdc0b9-123a-44a8-b07a-12055c8ba41f_73011.JPG" alt="">
+                <div class="restaurant-details">
+                    <h3>KFC</h3>
+                    <p>4.2 • 10-15 mins</p>
+                </div>
+                <div class="offer">₹289</div>
+            </div>
+            <div class="restaurant">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/5/6/c225a4e8-4b98-4c14-939b-361c7bcae118_653105.JPG" alt="Barbeque Nation">
+                <div class="restaurant-details">
+                    <h3>Keventers Ice Cream</h3>
+                    <p>4.6 • 35-40 mins</p>
+                </div>
+                <div class="offer">₹99</div>
+            </div>
+            <div class="restaurant">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/95982cfa57cb3b7e504f2015c375fd55" alt="">
+                <div class="restaurant-details">
+                    <h3>Wow! China</h3>
+                    <p>4.2 • 30-35 mins</p>
+                </div>
+                <div class="offer">₹119</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3><i>LOGO</i></h3>
+                <p>© 2024 Hello Technologies Pvt. Ltd</p>
+            </div>
+            <div class="footer-column">
+                <h3>Contact us</h3>
+                <ul>
+                    <li><a href="#">Help & Support</a></li>
+                    <li><a href="#">Partner with us</a></li>
+                    <li><a href="#">Ride with us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>We deliver to:</h3>
+                <ul>
+                    <li><a href="#">Bangalore</a></li>
+                    <li><a href="#">Gurgaon</a></li>
+                    <li><a href="#">Hyderabad</a></li>
+                    <li><a href="#">Delhi</a></li>
+                    <li><a href="#">Mumbai</a></li>
+                    <li><a href="#">Pune</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
